@@ -110,7 +110,7 @@ player.position.z += dz;
 
 // Springen (Leertaste)
 if ((keys[" "] || keys["space"]) && onGround) {
-velocity.y = 0.2;
+velocity.y = 0.5;
 onGround = false;
 }
 
