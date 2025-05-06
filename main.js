@@ -7,7 +7,7 @@ document.body.appendChild(renderer.domElement);
 
 // === Himmel (Skybox als Hintergrund) ===
 const loader = new THREE.TextureLoader();
-loader.load('IMG_2460.jpeg', function(texture) {
+loader.load('IMG_2460.jpg', function(texture) {
 scene.background = texture;
 });
 
