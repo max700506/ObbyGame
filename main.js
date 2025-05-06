@@ -47,7 +47,7 @@ window.addEventListener("keyup", (e) => keys[e.key.toLowerCase()] = false);
 
 // === Touch-Springbutton ===
 const jumpButton = document.createElement("button");
-jumpButton.innerText = "SPRINGEN";
+jumpButton.innerText = "JUMP";
 Object.assign(jumpButton.style, {
 position: "absolute", bottom: "20px", right: "20px", padding: "20px",
 fontSize: "20px", zIndex: 10
@@ -100,8 +100,8 @@ const forward = new THREE.Vector3(Math.sin(camAngle), 0, Math.cos(camAngle));
 const right = new THREE.Vector3(forward.z, 0, -forward.x);
 let dx = 0, dz = 0;
 
-if (keys["w"]) { dx += forward.x * speed; dz += forward.z * speed; }
-if (keys["s"]) { dx -= forward.x * speed; dz -= forward.z * speed; }
+if (keys["s"]) { dx += forward.x * speed; dz += forward.z * speed; }
+if (keys["w"]) { dx -= forward.x * speed; dz -= forward.z * speed; }
 if (keys["a"]) { dx -= right.x * speed; dz -= right.z * speed; }
 if (keys["d"]) { dx += right.x * speed; dz += right.z * speed; }
 
