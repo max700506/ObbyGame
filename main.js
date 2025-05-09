@@ -1,4 +1,3 @@
-Canvas // === Szene, Kamera, Renderer ===
 
 const scene = new THREE.Scene();
 
